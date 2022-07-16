@@ -1,0 +1,18 @@
+class Node:
+    def __init__(self):
+        self.data = data
+        self.next = next
+
+def getNode(llist, positionFromTail):
+    count = 0
+    temp = llist
+    while temp:
+        temp = temp.next
+        count += 1
+    
+    temp1 = llist
+    pos = count - positionFromTail
+    for i in range(1,pos):
+        temp1 = temp1.next
+        
+    return temp1.data
