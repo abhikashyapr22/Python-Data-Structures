@@ -3,14 +3,14 @@ class Node:
         self.data = data
         self.next = next
 
-def getNode(llist, positionFromTail):
+def getNode(head, positionFromTail):
     count = 0
-    temp = llist
+    temp = head
     while temp:
         temp = temp.next
         count += 1
     
-    temp1 = llist
+    temp1 = head
     pos = count - positionFromTail
     for i in range(1,pos):
         temp1 = temp1.next
